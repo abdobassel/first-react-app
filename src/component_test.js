@@ -1,4 +1,4 @@
-
+import MyBtn from "./MyBtn";
 
 export default function TestImport() {
     const x = 20;
@@ -21,19 +21,5 @@ export default function TestImport() {
     );
 }
 
-const BtnStyle = {
-    color: "black",
-    backgroundColor: 'red',
 
-    height: 60,
-    fontSize: 30,
-}
-function MyBtn() {
-
-    // style ==> عبارة عن اوبجكت كامل 
-    return <button style={BtnStyle}> Button </button>
-}
-function SayHello() {
-    alert('hello from react jsx onClic={functionName}');
-}
 

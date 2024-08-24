@@ -16,9 +16,13 @@
 .main-container {
 
   display: flex;
-  flex-direction: row;
+
   align-items: start;
   justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  width: 70%;
 }
 
 .App-header {
@@ -39,7 +43,18 @@
 
   align-items: center;
   margin-top: 15px;
-  width: 600px;
+  width: 70%;
+  color: black;
+  box-shadow: turquoise;
+  font-size: 22px;
+  border: #61dafb 7px solid;
+}
+
+.Btn-class {
+
+
+  margin-top: 20px;
+  width: 30%;
   color: black;
   box-shadow: turquoise;
   font-size: 22px;
