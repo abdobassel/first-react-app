@@ -18,16 +18,16 @@ function App() {
 
   );
 }
-function Post() {
+function Post({ title, body }) {
   return (
     <div className={"Post-style "}>
 
 
       <h2>
-        this is the Post Title
+        {title}
       </h2>
       <h2>
-        this is the    Post Body
+        {body}
       </h2>
     </div>
   );
@@ -44,11 +44,12 @@ function MainContainer() {
 function Posts() {
   return (
     <div className='posts'>
-      < Post />
-      < Post />
-      < Post />
-      < Post />
-      < Post />
+      < Post title={'Web programming is a vkm lrkfrf'} body={" do you know ......................"} />
+      < Post title={'Front End programming is a vkm lrkfrf'} body={" do you know ......................"} />
+
+      < Post title={'Mobile App programming is a mmmmm lrkfrf'} body={" do you know ......................"} />
+
+      < Post title={'React Js is a mmd,md lrkfrf'} body={" do you know ......c................"} />
     </div>
   );
 }
