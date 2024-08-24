@@ -47,33 +47,18 @@ function MainContainer() {
 }
 function Posts() {
   const articles = [
-    'first article content',
-    'second article content',
-    'third article content',
+    { id: 1, title: 'first article content', body: 'Web Programimmmmmm' },
+    { id: 2, title: 'second article content', body: 'Web Programimmmmmm' },
+    { id: 3, title: 'third article content', body: 'Web Programimmmmmm', }
   ];
+
+  const postList = articles.map((post) => {
+    return <Post key={post.id} title={post.title} body={post.body}> </Post>
+  });
 
   return (
 
-    <div className='posts'>
-      <Post content={articles[0]} title={'Web programming is a vkm lrkfrf'} body={" do you know ......................"} >
-        <div> <h1>
-          children jsx 1
-        </h1></div>
-      </Post>
-      <Post content={articles[1]} title={'Front End programming is a vkm lrkfrf'} body={" do you know ......................"}>
-        <div> <h1>
-          children jsx 2
-        </h1></div>
-      </Post>
-
-      <Post content={articles[2]} title={'Front End programming is a vkm lrkfrf'} body={" do you know ......................"}>
-        <div> <h1>
-          children jsx 3
-        </h1></div>
-
-      </Post>
-      < Post title={'React Js is a mmd,md lrkfrf'} body={" do you know ......c................"} />
-    </div>
+    <div> {postList} </div>
   );
 }
 function Btns() {
